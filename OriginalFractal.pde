@@ -12,11 +12,11 @@ cat+=5;
 
 public void fractal(int x,int y,int len){
 	if (len<=10){
-		circle(x,y,len);
+		ellipse(x,y,len,len);
 	}else{
 		fill(0);
 		stroke(255);
-		circle(x,y,len);
+		ellipse(x,y,len,len);
 		fractal(x,y,len/2);
 		fractal(x+10,y+10,len/2);
 	}
